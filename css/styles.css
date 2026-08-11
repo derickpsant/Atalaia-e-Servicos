@@ -55,6 +55,67 @@ body {
     font-weight: 700;
 }
 
+
+
+/* Container externo para esconder o que passa das bordas */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Trilho que desliza */
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  /* Controla a velocidade mudando '20s' */
+  animation: scroll 20s linear infinite; 
+}
+
+/* Pausa a animação quando o usuário passa o mouse por cima */
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+/* Estilo do cartão branco arredondado para cada logo */
+.logo-card {
+  width: 160px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  flex-shrink: 0;
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Regra da animação de deslizamento */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Desloca exatamente a metade da largura total (o conjunto original) */
+    transform: translateX(-50%); 
+  }
+}
+
+
+
+
+
 .nav-menu {
     display: flex;
     list-style: none;
