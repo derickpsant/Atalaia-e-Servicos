@@ -61,7 +61,7 @@ body {
    CARROSSEL DE LOGOS RESPONSIVO
    =================================================== */
 
-/* Garante que o carrossel ocupe toda a largura disponível da tela */
+/* Garante que o carrossel ocupe toda a largura disponível da tela e fique centralizado */
 .carousel-container {
   width: 100% !important;
   max-width: 100% !important;
@@ -71,7 +71,7 @@ body {
   padding: 30px 0 !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-start !important;
+  justify-content: center !important; /* <--- ALTERADO AQUI */
   box-sizing: border-box !important;
 }
 
@@ -80,6 +80,7 @@ body {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
+  justify-content: center !important; /* <--- ADICIONADO PARA GARANTIR ALINHAMENTO DAS LOGOS */
   gap: 20px !important;
   width: max-content !important;
   animation: scroll 25s linear infinite !important;
@@ -137,7 +138,7 @@ body {
   
   .carousel-track {
     gap: 14px !important;
-    animation-duration: 18s !important; /* Mais rápido em telas menores */
+    animation-duration: 18s !important;
   }
 
   .logo-card {
@@ -166,7 +167,6 @@ body {
     border-radius: 8px !important;
   }
 }
-
 
 
 
