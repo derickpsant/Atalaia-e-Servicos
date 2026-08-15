@@ -754,7 +754,7 @@ nav ul li a.active::after {
     display: grid;
     /* Para telas maiores, exibe 3 colunas iguais */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-    gap: 30px;
+    gap: 60px;
 }
 
 /* Estilo Individual de Cada Item (Missão, Visão, Valores) */
