@@ -93,10 +93,10 @@ body {
 }
 
 /* ===================================================
-   CARROSSEL DE LOGOS RESPONSIVO
+   CARROSSEL DE LOGOS RESPONSIVO (VAI E VEM)
    =================================================== */
 
-/* Garante que o carrossel ocupe toda a largura disponível da tela e fique centralizado */
+/* Container principal */
 .carousel-container {
   width: 100% !important;
   max-width: 100% !important;
@@ -106,7 +106,7 @@ body {
   padding: 30px 0 !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important; /* <--- ALTERADO AQUI */
+  justify-content: flex-start !important;
   box-sizing: border-box !important;
 }
 
@@ -115,10 +115,11 @@ body {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  justify-content: center !important; /* <--- ADICIONADO PARA GARANTIR ALINHAMENTO DAS LOGOS */
+  justify-content: flex-start !important;
   gap: 20px !important;
   width: max-content !important;
-  animation: scroll 50s linear infinite !important;
+  /* alternate faz ir e voltar | ease-in-out suaviza as trocas de sentido */
+  animation: scroll 15s ease-in-out infinite alternate !important;
   will-change: transform;
 }
 
@@ -151,13 +152,14 @@ body {
   display: block !important;
 }
 
-/* Regra da animação infinita */
+/* Regra da animação de vai e vem */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    /* Desloca a largura total do trilho menos a largura da tela */
+    transform: translateX(calc(-100% + 100vw));
   }
 }
 
@@ -173,7 +175,7 @@ body {
   
   .carousel-track {
     gap: 14px !important;
-    animation-duration: 30s !important;
+    animation-duration: 12s !important;
   }
 
   .logo-card {
@@ -192,7 +194,7 @@ body {
 
   .carousel-track {
     gap: 10px !important;
-    animation-duration: 50s !important;
+    animation-duration: 10s !important;
   }
 
   .logo-card {
