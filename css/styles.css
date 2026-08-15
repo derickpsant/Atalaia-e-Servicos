@@ -119,7 +119,7 @@ body {
   gap: 20px !important;
   width: max-content !important;
   /* alternate faz ir e voltar | ease-in-out suaviza as trocas de sentido */
-  animation: scroll 15s ease-in-out infinite alternate !important;
+  animation: scroll 40s ease-in-out infinite alternate !important;
   will-change: transform;
 }
 
@@ -175,7 +175,7 @@ body {
   
   .carousel-track {
     gap: 14px !important;
-    animation-duration: 12s !important;
+    animation-duration: 40s !important;
   }
 
   .logo-card {
