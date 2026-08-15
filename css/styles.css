@@ -93,7 +93,7 @@ body {
 }
 
 /* ===================================================
-   CARROSSEL DE LOGOS RESPONSIVO (VAI E VEM)
+   CARROSSEL DE LOGOS RESPONSIVO (VAI E VEM - ULTRA LENTO)
    =================================================== */
 
 /* Container principal */
@@ -118,8 +118,8 @@ body {
   justify-content: flex-start !important;
   gap: 20px !important;
   width: max-content !important;
-  /* alternate faz ir e voltar | ease-in-out suaviza as trocas de sentido */
-  animation: scroll 60s ease-in-out infinite alternate !important;
+  /* Mudado para 'linear' para velocidade constante sem acelerações */
+  animation: scroll 80s linear infinite alternate !important;
   will-change: transform;
 }
 
@@ -175,7 +175,7 @@ body {
   
   .carousel-track {
     gap: 14px !important;
-    animation-duration: 60s !important;
+    animation-duration: 90s !important;
   }
 
   .logo-card {
@@ -186,7 +186,7 @@ body {
   }
 }
 
-/* Celulares (até 480px) */
+/* Celulares (até 480px) - Ajuste específico para Motorola e telas 120Hz */
 @media (max-width: 480px) {
   .carousel-container {
     padding: 15px 0 !important;
@@ -194,7 +194,8 @@ body {
 
   .carousel-track {
     gap: 10px !important;
-    animation-duration: 60s !important;
+    /* Duração de 120 segundos para garantir movimento bem lento */
+    animation-duration: 120s !important;
   }
 
   .logo-card {
@@ -204,7 +205,6 @@ body {
     border-radius: 8px !important;
   }
 }
-
 
 
 .nav-menu {
