@@ -59,7 +59,7 @@ body {
 .mvv-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px; /* <--- Aumente aqui se quiser mais espaço entre as caixas */
+    gap: 110px; /* <--- Aumente aqui se quiser mais espaço entre as caixas */
     max-width: 1200px;
     margin: 0 auto;
 }
