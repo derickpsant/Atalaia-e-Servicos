@@ -118,7 +118,7 @@ body {
   justify-content: center !important; /* <--- ADICIONADO PARA GARANTIR ALINHAMENTO DAS LOGOS */
   gap: 20px !important;
   width: max-content !important;
-  animation: scroll 35s linear infinite !important;
+  animation: scroll 45s linear infinite !important;
   will-change: transform;
 }
 
