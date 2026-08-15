@@ -192,7 +192,7 @@ body {
 
   .carousel-track {
     gap: 10px !important;
-    animation-duration: 20s !important;
+    animation-duration: 5s !important;
   }
 
   .logo-card {
