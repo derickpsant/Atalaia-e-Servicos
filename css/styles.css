@@ -55,7 +55,28 @@ body {
     font-weight: 700;
 }
 
+/* 1. Ajusta o contêiner para alinhar os cards lado a lado e aplica o espaçamento correto */
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px; /* <--- Aumente aqui se quiser mais espaço entre as caixas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* 2. Garante o espaçamento entre as caixas caso o navegador empilhe em telas menores */
+.mvv-item {
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px; /* Espaço de segurança entre blocos empilhados */
+}
+
+/* 3. Limpa a margem do último item */
+.mvv-item:last-child {
+    margin-bottom: 0;
+}
 
 /* ===================================================
    CARROSSEL DE LOGOS RESPONSIVO
