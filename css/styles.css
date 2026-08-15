@@ -78,6 +78,20 @@ body {
     margin-bottom: 0;
 }
 
+/* Remove as linhas horizontais e ativa os marcadores de bolinha */
+.mvv-values-list {
+    text-align: left;
+    margin-top: 15px;
+    line-height: 1.8;
+    list-style-type: disc !important; /* Força a exibição das bolinhas */
+    padding-left: 20px;               /* Dá o espaço necessário para a bolinha aparecer */
+}
+
+.mvv-values-list li {
+    border-bottom: none !important; /* Remove a linha cinza na horizontal */
+    padding: 6px 0;                 /* Ajusta o espaçamento entre os itens */
+}
+
 /* ===================================================
    CARROSSEL DE LOGOS RESPONSIVO
    =================================================== */
