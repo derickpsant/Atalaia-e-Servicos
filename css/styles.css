@@ -93,7 +93,7 @@ body {
 }
 
 /* ===================================================
-   CARROSSEL DE LOGOS RESPONSIVO (VAI E VEM - ULTRA LENTO)
+   CARROSSEL DE LOGOS RESPONSIVO (VAI E VEM - VELOCIDADE CONSTANTE)
    =================================================== */
 
 /* Container principal */
@@ -118,7 +118,7 @@ body {
   justify-content: flex-start !important;
   gap: 20px !important;
   width: max-content !important;
-  /* Mudado para 'linear' para velocidade constante sem acelerações */
+  /* 'linear' garante velocidade totalmente constante sem acelerar no meio */
   animation: scroll 80s linear infinite alternate !important;
   will-change: transform;
 }
@@ -186,7 +186,7 @@ body {
   }
 }
 
-/* Celulares (até 480px) - Ajuste específico para Motorola e telas 120Hz */
+/* Celulares (até 480px) */
 @media (max-width: 480px) {
   .carousel-container {
     padding: 15px 0 !important;
@@ -194,7 +194,6 @@ body {
 
   .carousel-track {
     gap: 10px !important;
-    /* Duração de 120 segundos para garantir movimento bem lento */
     animation-duration: 120s !important;
   }
 
@@ -205,7 +204,6 @@ body {
     border-radius: 8px !important;
   }
 }
-
 
 .nav-menu {
     display: flex;
